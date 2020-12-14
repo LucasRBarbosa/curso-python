@@ -19,5 +19,9 @@ for i in range(1, 7):
     if sortear_dado() == i:
         print('ACERTOU', i)
         break
+
+    else:
+        print('ERROOOUUU', i)
+
 else:
     print('Não acertou o número!')

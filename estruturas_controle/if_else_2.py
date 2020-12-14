@@ -12,5 +12,13 @@ def faixa_etaria(idade):
 
 
 if __name__ == '__main__':
-    for idade in (17, 0, 35, 87, 113, -2):
-        print(f'{idade}: {faixa_etaria(idade)}')
+
+    estrutura = input('Informe a estrutura de controle (L/T): ')
+
+    if estrutura == 'L':
+        # Utilizando Listas
+        for idade in [17, 0, 35, 87, 113, -2]:
+            print(f'{idade}: {faixa_etaria(idade)}')
+    else:
+        for idade in (21, 33, 67, 87, 113, -2):
+            print(f'{idade}: {faixa_etaria(idade)}')
